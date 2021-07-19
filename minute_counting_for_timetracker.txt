@@ -31,3 +31,9 @@ Add remainder from previous calculation
 Convert to multiple of 0.25. Set remainder to whatever is left
 
 -> Will need to remember which minutes have been claimed
+
+-- Steps to take -----
+1. Update data record to handle extra field
+2. Update load function to handle extra field (but also work w/out it)
+3. Update save function to handle extra field
+4+ Add functionality for calculating and summing extra minutes
