@@ -35,8 +35,8 @@ Convert to multiple of 0.25. Set remainder to whatever is left
 2) ??
 Limit calculations to the current fiscal year (max 365, O(365))
 Whenever a change is made to a relevant field (start or end time)
-  recalculate accumulated time for every following entry until the end of them
-  fiscal year
+  recalculate accumulated time for every following entry until the end of the
+  fiscal year.
 
 -- Steps to take -----
 1. Update data record to handle extra field
