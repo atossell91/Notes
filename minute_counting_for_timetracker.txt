@@ -32,6 +32,12 @@ Convert to multiple of 0.25. Set remainder to whatever is left
 
 -> Will need to remember which minutes have been claimed
 
+2) ??
+Limit calculations to the current fiscal year (max 365, O(365))
+Whenever a change is made to a relevant field (start or end time)
+  recalculate accumulated time for every following entry until the end of them
+  fiscal year
+
 -- Steps to take -----
 1. Update data record to handle extra field
 2. Update load function to handle extra field (but also work w/out it)
