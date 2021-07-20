@@ -1,0 +1,5 @@
+### Time tracker launcher ###
+-- Intent ------
+To create a launcher for the time tracker, that automatically connects to an
+  address, checks the current program version against the remote one and if
+  the remote is different/newer, downloads and replaces the old local one.
