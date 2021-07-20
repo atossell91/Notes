@@ -37,3 +37,6 @@ Limit calculations to the current fiscal year (max 365, O(365))
 Whenever a change is made to a relevant field (start or end time)
   recalculate accumulated time for every following entry until the end of the
   fiscal year.
+
+3) Same as 2, except limit calculations to monthly
+  -> What to do with outstanding minutes at the end of the month
