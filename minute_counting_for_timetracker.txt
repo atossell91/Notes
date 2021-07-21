@@ -40,3 +40,14 @@ Whenever a change is made to a relevant field (start or end time)
 
 3) Same as 2, except limit calculations to monthly
   -> What to do with outstanding minutes at the end of the month
+
+4) Hybrid
+  When a new record is created/modified
+  Calculate number of extra minutes for that day
+  Add to the previous record's number of minutes
+    -> Finding a previous record
+      Look back no further than 35 days. If a record cannot be found within
+        35 days, then the carry minutes is 0
+  When calculating/recalculating carry values, first check that the date being
+    worked on is less than 35 days from the current date
+    If the date being worked on is >35 days from current, then do nothing
